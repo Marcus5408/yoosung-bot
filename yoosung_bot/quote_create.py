@@ -6,11 +6,11 @@ import textwrap
 
 def create_image(pfp_url: str, username: str, discriminator: str,message: str):
     # download the pfp from discord
-    # response = requests.get(pfp_url)
-    # pfp = Image.open(BytesIO(response.content))
+    response = requests.get(pfp_url)
+    pfp = Image.open(BytesIO(response.content))
 
     # Load the original image
-    pfp = Image.open("./yoosung_bot/dokja.jpg")
+    # pfp = Image.open("./yoosung_bot/dokja.jpg")
 
     # Upscale the image to 1080p
     scaled_image = pfp.resize((1080, 1080))
