@@ -39,13 +39,13 @@ async def on_message(message):
                 avatar_url = f"https://cdn.discordapp.com/embed/avatars/{randint(0,5)}.png"  # Use default image if no avatar
 
             # Send embed with username and avatar
-            embed = discord.Embed(title=f"{author.name}'s Info", color=discord.Color.blue())
-            embed.set_thumbnail(url=avatar_url)
-            embed.add_field(name="Username", value=author.name, inline=False)
-            embed.add_field(name="Discriminator", value=author.discriminator, inline=False)
-            embed.add_field(name="Message", value=original_message.content, inline=False)
-            print(f"Original message: {original_message.content}")
-            await message.channel.send(embed=embed)
+            # embed = discord.Embed(title=f"{author.name}'s Info", color=discord.Color.blue())
+            # embed.set_thumbnail(url=avatar_url)
+            # embed.add_field(name="Username", value=author.name, inline=False)
+            # embed.add_field(name="Discriminator", value=author.discriminator, inline=False)
+            # embed.add_field(name="Message", value=original_message.content, inline=False)
+            # print(f"Original message: {original_message.content}")
+            # await message.channel.send(embed=embed)
             quote_image = create_image(avatar_url, author.name, original_message.content)
             await message.channel.send(file=discord.File(quote_image, "quote.jpg"))
 
