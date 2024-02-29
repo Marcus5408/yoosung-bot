@@ -46,7 +46,7 @@ async def on_message(message):
             # embed.add_field(name="Message", value=original_message.content, inline=False)
             # print(f"Original message: {original_message.content}")
             # await message.channel.send(embed=embed)
-            quote_image = create_image(avatar_url, author.name, original_message.content)
+            quote_image = create_image(avatar_url, author.name, author.discriminator, original_message.content)
             await message.channel.send(file=discord.File(quote_image, "quote.jpg"))
 
 dotenv.load_dotenv()
