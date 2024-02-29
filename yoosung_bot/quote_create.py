@@ -69,7 +69,7 @@ def create_image(pfp_url: str, username: str, discriminator: str,message: str):
     canvas.save("./tmp/output_image.jpg")
 
     # Show the image (optional)
-    canvas.show()
+    # canvas.show()
 
     return "./tmp/output_image.jpg"
 
