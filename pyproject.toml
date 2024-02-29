@@ -11,6 +11,8 @@ discord = "^2.3.2"
 python-dotenv = "^1.0.1"
 pillow = "^10.2.0"
 requests = "^2.31.0"
+datetime = "^5.4"
+super-image = "^0.1.7"
 
 
 [build-system]
