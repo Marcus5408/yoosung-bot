@@ -27,3 +27,8 @@ config.json
 .development.env
 .test.env
 .production.env
+
+# Temporary files
+tmp/
+temp/
+cache/
